@@ -4,6 +4,9 @@ require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
 require 'site_prism'
+require 'rest-client'
+require 'json'
+require 'httparty'
 
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
